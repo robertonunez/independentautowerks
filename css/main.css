@@ -4,19 +4,10 @@
    Author's custom styles
    ========================================================================== */
 
+#directions img.adp-marker {
+    margin: 0.5em;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 768px) {
+    
+}

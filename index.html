@@ -13,8 +13,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
-                padding-top: 50px;
-                padding-bottom: 20px;
+                padding-bottom: 50px;
             }
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -22,34 +21,38 @@
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Independent Auto Werks</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#history">History</a></li>
-              <li><a href="#location">Location</a></li>
-          </ul>
-            <ul class="nav navbar-nav navbar-right">
+    <body data-spy="scroll" data-target="#sectionbar" data-offset="50">
+        <nav class="nav navbar-inverse">
+            <a class="navbar-brand">Independent Auto Werks</a>
+            <ul class="nav navbar-nav navbar-right" style="margin-left: 50px;margin-right:10px;display:flex;">
                 <li><a><span class="glyphicon glyphicon-road"></span> 605 SW 13th St, Corvallis, OR 97333</a></li>
                 <li><a><span class="glyphicon glyphicon-earphone"></span> (541) 752-4884</a></li>
             </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
+
+            <nav id="sectionbar" class="nav navbar-inverse navbar-fixed-bottom" data-offset-bottom="100">
+                <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand">Navigation</a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#responsivenav" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <div id="responsivenav" class="nav navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#history">History</a></li>
+                      <li><a href="#location">Find us!</a></li>
+                  </ul>
+                </div><!--/.navbar-collapse -->
+                </div>
+            </nav>
+        </nav>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div id="home" class="jumbotron">
@@ -62,7 +65,6 @@
       </div>
     </div>
         
-
     <div id="history" class="container">
       <!-- Example row of columns -->
       <div class="row">
@@ -100,6 +102,8 @@
 
         <script>
             var map, autocomplete, destination, placesService, directionsService, directionsDisplay, marker, infoWindow, located;
+                        
+            $('form').submit(function(e){e.preventDefault()});
             
             function initMap() {
                 destination = {lat: 44.561686, lng: -123.272000};
@@ -209,6 +213,8 @@
             
             function handleLocationError() {
             }
+
+            
         </script>
 
         <script src="js/main.js"></script>
