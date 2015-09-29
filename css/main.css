@@ -4,6 +4,26 @@
    Author's custom styles
    ========================================================================== */
 
+.navlogo {
+    display: inline;
+    width: 40px;
+    vertical-align: top;
+    margin-right: 5px;
+    position: relative;
+    top: -7px;
+    fill: antiquewhite;
+}
+
+.glyphicon {
+    vertical-align: top;
+    font-size: 25px;
+    line-height: .75em;
+}
+
+.ecliptic {
+    font: 20px/1em 'ecliptic_brkregular', serif;
+}
+
 #directions img.adp-marker {
     margin: 0.5em;
 }

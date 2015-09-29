@@ -20,11 +20,12 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <link rel="stylesheet" href="fonts/ecliptic-webfont.css" type="text/css" charset="utf-8" />
     </head>
     <body data-spy="scroll" data-target="#sectionbar" data-offset="50">
         <nav class="nav navbar-inverse">
-            <a class="navbar-brand">Independent Auto Werks</a>
-            <ul class="nav navbar-nav navbar-right" style="margin-left: 50px;margin-right:10px;display:flex;">
+            <a class="navbar-brand"><span class="ecliptic"><img class="navlogo" src="img/logo.svg"></img>Independent</span> <span class="automaton">Auto Werks</span></a>
+            <ul class="nav navbar-nav navbar-right" style="margin-left: 50px;margin-right:10px;display:inline-block;">
                 <li><a><span class="glyphicon glyphicon-road"></span> 605 SW 13th St, Corvallis, OR 97333</a></li>
                 <li><a><span class="glyphicon glyphicon-earphone"></span> (541) 752-4884</a></li>
             </ul>
@@ -152,20 +153,20 @@
             
             function buildContent(place) {
                 var contentString = '<div id="iw-container">' +
-                    '<div class="iw-title">'+
-                    place.name+
-                    '</div>'+
+                    '<div class="iw-title">' +
+                    '<span class="ecliptic">Independent</span><span class="automaton">Auto Werks</span>' +
+                    '</div>' +
                     '<div class="iw-content">' +
-                    '<img src="'+
-                    '" alt="Independent Auto Werks" max-height="100px" width="100%">'+
+                    '<img src="' +
+                    '" alt="Independent Auto Werks" max-height="100px" width="100%">' +
                     '<div class="iw-subTitle">Contacts</div>' +
-                    '<p>'+
-                    'ADDRESS'+
-                    '<br>'+
-                    'PHONE'+
-                    '</p>'+
-                    '</div>'+
-                    '<div class="iw-bottom-gradient"></div>'+
+                    '<p>' +
+                    'ADDRESS' +
+                    '<br>' +
+                    'PHONE' +
+                    '</p>' +
+                    '</div>' +
+                    '<div class="iw-bottom-gradient"></div>' +
                     '</div>';
                 return contentString;
             }
