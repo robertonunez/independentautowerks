@@ -23,11 +23,19 @@
         <link rel="stylesheet" href="fonts/ecliptic-webfont.css" type="text/css" charset="utf-8" />
     </head>
     <body data-spy="scroll" data-target="#sectionbar" data-offset="50">
-        <nav class="nav navbar-inverse">
-            <a class="navbar-brand"><span class="ecliptic"><img class="navlogo" src="img/logo.svg"></img>Independent</span> <span class="automaton">Auto Werks</span></a>
-            <ul class="nav navbar-nav navbar-right" style="margin-left: 50px;margin-right:10px;display:inline-block;">
-                <li><a><span class="glyphicon glyphicon-road"></span> 605 SW 13th St, Corvallis, OR 97333</a></li>
-                <li><a><span class="glyphicon glyphicon-earphone"></span> (541) 752-4884</a></li>
+        <nav id="home" class="nav navbar-inverse">
+            <a class="navbar-brand">
+                <img class="navlogo" src="img/logo.svg"></img><!--
+                --><div class="ecliptic">Independent&nbsp;</div><!--
+                --><div class="automaton">Auto&nbsp;Werks</div>
+            </a>
+            <ul class="nav navbar-nav navbar-right" style="margin-left:10px;margin-right:10px;">
+                <li>
+                    <a><span class="glyphicon glyphicon-road"></span>&nbsp;605&nbsp;SW&nbsp;13th&nbsp;St,&nbsp;Corvallis,&nbsp;OR&nbsp;97333</a>
+                </li>
+                <li>
+                    <a><span class="glyphicon glyphicon-earphone"></span>&nbsp;(541)&nbsp;752-4884</a>
+                </li>
             </ul>
 
             <nav id="sectionbar" class="nav navbar-inverse navbar-fixed-bottom" data-offset-bottom="100">
@@ -56,16 +64,35 @@
         <![endif]-->
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div id="home" class="jumbotron">
-      <div class="container">
-        <h2>Proudly serving Corvallis for over 45 years!</h2>
+    <div id="main" class="container-fluid">
+        <div id="slogan" class="container">
+            <h2>Proudly serving Corvallis for over 45 years!</h2>
 
-          <div class="container-fluid">
-        <p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
-          </div>
-      </div>
+            <div class="container">
+                <p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+            </div>
+        </div>
     </div>
-        
+    <div id="maincarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active center-cropped"
+                style="background-image: url('img/beetle.jpg');">
+            </div>
+
+            <div class="item center-cropped"
+                style="background-image: url('img/tiguan.jpg');">
+            </div>
+
+            <div class="item center-cropped"
+                style="background-image: url('img/beetlenew.jpg');">
+            </div>
+
+            <div class="item center-cropped"
+                style="background-image: url('img/westie.jpg');">
+            </div>
+        </div>
+    </div>
     <div id="history" class="container">
       <!-- Example row of columns -->
       <div class="row">
@@ -90,12 +117,12 @@
             <div id="directions" class="col-md-6" style="max-height:420px;overflow-y:scroll;overflow-x:hidden;padding-right:42px;right:-21px;margin-bottom:0;"></div>
         </div>
     </div>
-      <hr>
-      <footer>
-          <div class="container">
-              <p>&copy; Your Site Works 2015</p>
-          </div>
-      </footer>
+    <hr>
+    <footer>
+        <div class="container">
+            <p>&copy; Your Site Works 2015</p>
+        </div>
+    </footer>
  <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
@@ -158,7 +185,7 @@
                     '</div>' +
                     '<div class="iw-content">' +
                     '<img src="' +
-                    '" alt="Independent Auto Werks" max-height="100px" width="100%">' +
+                    '" alt="Independent Auto Werks" height="100px" width="auto">' +
                     '<div class="iw-subTitle">Contacts</div>' +
                     '<p>' +
                     'ADDRESS' +

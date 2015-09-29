@@ -4,16 +4,30 @@
    Author's custom styles
    ========================================================================== */
 
-.navlogo {
-    display: inline;
-    width: 40px;
-    vertical-align: top;
-    margin-right: 5px;
-    position: relative;
-    top: -7px;
-    fill: antiquewhite;
+
+#main {
+    position: absolute;
+    display: inline-block;
+    top: 200px;
+    left: 100px;
 }
 
+.navbar-brand {
+    display: inline-flex;
+}
+
+.navbar-right {
+    display: inline-block;
+}
+
+.navlogo {
+    position:relative;
+    top: -10px;
+    height:40px;
+    width:auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
 .glyphicon {
     vertical-align: top;
     font-size: 25px;
@@ -27,6 +41,48 @@
 #directions img.adp-marker {
     margin: 0.5em;
 }
+
+.carousel-inner div {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+          transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade{
+    z-index: -1;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
 
 @media (min-width: 768px) {
     
